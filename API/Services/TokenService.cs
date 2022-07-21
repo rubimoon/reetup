@@ -1,11 +1,8 @@
-using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using Domain;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace API.Services
@@ -49,7 +46,7 @@ namespace API.Services
             var randomNumber = new byte[32];
             using var rng = RandomNumberGenerator.Create();
             rng.GetBytes(randomNumber);
-            return new RefreshToken{Token = Convert.ToBase64String(randomNumber)};
+            return new RefreshToken { Token = Convert.ToBase64String(randomNumber) };
         }
     }
 }

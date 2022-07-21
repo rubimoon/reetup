@@ -1,22 +1,15 @@
-using System;
 using System.Text;
 using System.Threading.Tasks;
 using API.Services;
-using Domain;
 using Infrastructure.Security;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using Persistence;
 
 namespace API.Extensions
 {
     public static class IdentityServiceExtensions
     {
-        public static IServiceCollection AddIdentityServices(this IServiceCollection services, 
+        public static IServiceCollection AddIdentityServices(this IServiceCollection services,
             IConfiguration config)
         {
             services.AddIdentityCore<AppUser>(opt =>
@@ -44,7 +37,7 @@ namespace API.Extensions
                     };
                     opt.Events = new JwtBearerEvents
                     {
-                        OnMessageReceived = context => 
+                        OnMessageReceived = context =>
                         {
                             var accessToken = context.Request.Query["access_token"];
                             var path = context.HttpContext.Request.Path;

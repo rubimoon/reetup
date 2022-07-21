@@ -139,12 +139,12 @@ namespace Persistence
                             new ActivityAttendee
                             {
                                 AppUser = users[1],
-                                IsHost = true                            
+                                IsHost = true
                             },
                             new ActivityAttendee
                             {
                                 AppUser = users[0],
-                                IsHost = false                            
+                                IsHost = false
                             },
                         }
                     },
@@ -161,7 +161,7 @@ namespace Persistence
                             new ActivityAttendee
                             {
                                 AppUser = users[1],
-                                IsHost = true                            
+                                IsHost = true
                             }
                         }
                     },
@@ -178,12 +178,12 @@ namespace Persistence
                             new ActivityAttendee
                             {
                                 AppUser = users[0],
-                                IsHost = true                            
+                                IsHost = true
                             },
                             new ActivityAttendee
                             {
                                 AppUser = users[1],
-                                IsHost = false                            
+                                IsHost = false
                             },
                         }
                     },
@@ -200,12 +200,12 @@ namespace Persistence
                             new ActivityAttendee
                             {
                                 AppUser = users[2],
-                                IsHost = true                            
+                                IsHost = true
                             },
                             new ActivityAttendee
                             {
                                 AppUser = users[1],
-                                IsHost = false                            
+                                IsHost = false
                             },
                         }
                     },
@@ -222,12 +222,12 @@ namespace Persistence
                             new ActivityAttendee
                             {
                                 AppUser = users[0],
-                                IsHost = true                            
+                                IsHost = true
                             },
                             new ActivityAttendee
                             {
                                 AppUser = users[2],
-                                IsHost = false                            
+                                IsHost = false
                             },
                         }
                     },
@@ -244,12 +244,12 @@ namespace Persistence
                             new ActivityAttendee
                             {
                                 AppUser = users[2],
-                                IsHost = true                            
+                                IsHost = true
                             },
                             new ActivityAttendee
                             {
                                 AppUser = users[1],
-                                IsHost = false                            
+                                IsHost = false
                             },
                         }
                     }
