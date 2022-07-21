@@ -28,12 +28,23 @@ app.UseCsp(opt => opt
     .BlockAllMixedContent()
     .StyleSources(s => s.Self().CustomSources(
         "https://fonts.googleapis.com",
-        "sha256-/epqQuRElKW1Z83z1Sg8Bs2MKi99Nrq41Z3fnS2Nrgk=",
-        "sha256-2aahydUs+he2AO0g7YZuG67RGvfE9VXGbycVgIwMnBI=",
-        "sha256-+oGcdj5BhO6SoiIGYIkPOMYi7d2h2Pp/bkJLBfYL+kk="
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css",
+        "sha256-yR2gSI6BIICdRRE2IbNP1SJXeA5NYPbaM32i/Y8eS9o="
+
     ))
     .FontSources(s => s.Self().CustomSources(
-        "https://fonts.gstatic.com", "data:"
+        "https://fonts.gstatic.com", "data:",
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/icons.woff",
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/icons.woff2",
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/icons.ttf",
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/outline-icons.woff2",
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/outline-icons.woff",
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/outline-icons.ttf",
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/brand-icons.woff2",
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/brand-icons.woff",
+        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/brand-icons.ttf"
+
+
     ))
     .FormActions(s => s.Self())
     .FrameAncestors(s => s.Self())
@@ -45,7 +56,7 @@ app.UseCsp(opt => opt
         ))
     .ScriptSources(s => s.Self()
         .CustomSources(
-            "sha256-HIgflxNtM43xg36bBIUoPTUuo+CXZ319LsTVRtsZ/VU=",
+            "sha256-HX/7oh9UwPOvN4s8UtW9iqMSJI3wWt+v5FcehMiaXpk=",
             "https://connect.facebook.net",
             "sha256-3x3EykMfFJtFd84iFKuZG0MoGAo5XdRfl3rq3r//ydA="
         ))
