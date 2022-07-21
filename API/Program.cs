@@ -30,7 +30,6 @@ app.UseCsp(opt => opt
         "https://fonts.googleapis.com",
         "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css",
         "sha256-yR2gSI6BIICdRRE2IbNP1SJXeA5NYPbaM32i/Y8eS9o="
-
     ))
     .FontSources(s => s.Self().CustomSources(
         "https://fonts.gstatic.com", "data:",
@@ -43,8 +42,6 @@ app.UseCsp(opt => opt
         "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/brand-icons.woff2",
         "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/brand-icons.woff",
         "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/fonts/brand-icons.ttf"
-
-
     ))
     .FormActions(s => s.Self())
     .FrameAncestors(s => s.Self())
@@ -56,8 +53,8 @@ app.UseCsp(opt => opt
         ))
     .ScriptSources(s => s.Self()
         .CustomSources(
-            "sha256-HX/7oh9UwPOvN4s8UtW9iqMSJI3wWt+v5FcehMiaXpk=",
             "https://connect.facebook.net",
+            "sha256-HX/7oh9UwPOvN4s8UtW9iqMSJI3wWt+v5FcehMiaXpk=",
             "sha256-3x3EykMfFJtFd84iFKuZG0MoGAo5XdRfl3rq3r//ydA="
         ))
 );
